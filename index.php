@@ -13,23 +13,33 @@
     <title>Home | Steph Hoel</title>
     <script type="text/javascript" src="http://ajax.googlesapi.com/ajax/libs/jquery/jquery.min.js"></script>
     <?php
-            require ("per/functions.php");
-        ?>
+        require ("per/functions.php");
+    ?>
 </head>
 
 <body>
     <header>
-        <!-- Foto <img src="images/fotografamaisproducoes.png" alt=""> -->
+         <!--<img src="images/fotografamaisproducoes.png" alt=""> -->
         <nav>
             Steph Hoel
             <br><!-- Menu -->
-            <a href="?" class="menuSelect">Home</a>
+            <a href="../StephHoel/" class="menuSelect">Home</a>
             <a href="?page=ficha" class="menuSelect">Ficha</a>
             <a href="?page=membros" class="menuSelect">Membros</a>
             <a href="?page=login" class="menuSelect">Login</a>
             <a href="?page=sobre" class="menuSelect">Sobre</a>
             <a href="?page=contato" class="menuSelect">Contato</a>
             <!-- Fim do Menu -->
+            
+            <div class="dropdown">
+              <button class="dropbtn">Dropdown</button>
+              <div class="dropdown-content">
+                <a href="#">Link 1</a>
+                <a href="#">Link 2</a>
+                <a href="#">Link 3</a>
+              </div>
+            </div>
+            
         </nav>
     </header>
     <main>
