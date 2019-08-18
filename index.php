@@ -32,11 +32,11 @@
             <!-- Fim do Menu -->
             
             <div class="dropdown">
-              <button class="dropbtn">Dropdown</button>
+              <a href="#0" class="menuSelect">Dropdown</a>
               <div class="dropdown-content">
-                <a href="#">Link 1</a>
-                <a href="#">Link 2</a>
-                <a href="#">Link 3</a>
+                <a href="#1" class="menuSelect">Link 1</a>
+                <a href="#2" class="menuSelect">Link 2</a>
+                <a href="#3" class="menuSelect">Link 3</a>
               </div>
             </div>
             
@@ -53,7 +53,8 @@
                         echo $e->getMessage();
                     }
                 ?>
-            </div><!-- Fim do Conteúdo -->
+                <!-- Fim do Conteúdo -->
+            </div>
         </article>
     </main>
 </body>
