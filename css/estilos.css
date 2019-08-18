@@ -1,0 +1,166 @@
+@charset "UTF-8";
+/* CSS Document */
+
+/* Fonts */
+@font-face {
+    font-family: bookmanOldStyleLeve;
+    src: url(../fonts/Bookman-Old-Style.TTF);
+}
+
+@font-face {
+    font-family: brushScriptStdMedium;
+    src: url(../fonts/Brush-Script-Std.otf);
+}
+
+/* IDs */
+
+
+/* Class */
+
+.load {
+    background: url(/images/loading.gif) no-repeat;
+    left: 50%;
+    margin: -39px 0 0 -44px;
+    position: absolute;
+    top: 50%;
+    z-index: 99999;
+}
+
+.bg_modal {
+    left: 0;
+    position: absolute;
+    top: 0;
+    z-index: 99998;
+}
+
+.view_modal {
+    left: 50%;
+    position: absolute;
+    text-align: left;
+    top: 50%;
+    z-index: 99998;
+}
+
+.modal {
+    cursor: pointer;
+    text-align: center;
+    visibility: hidden;
+}
+
+div conteudo_modal {
+    background: none repeat scroll 0 0 #FFFFFF;
+    box-sizing: border-box;
+    color: #222222;
+    height: 300px;
+    overflow: auto;
+    padding: 10px;
+    text-align: center;
+    width: 320px;
+}
+
+.corpo {
+    font-family: brushScriptStdMedium;
+    height: auto;
+    margin: auto;
+    position: relative;
+    width: 900px;
+    z-index: 0;
+}
+
+.cabecalho {
+    font-family: brushScriptStdMedium;
+    font-size: 72px;
+    margin: auto;
+    position: relative;
+    width: 900px;
+    z-index: 1;
+}
+
+.menu {
+    font-family: brushScriptStdMedium;
+    font-size: 24px;
+    height: 40px;
+    margin: auto;
+    margin-top: 15px;
+    position: relative;
+    text-align: center;
+    width: auto;
+    z-index: 1;
+}
+
+.menuSelect {
+    border: 1px lightgray solid;
+    border-top-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    background-color: lightgray;
+    padding: 10px;
+    margin-right: 20px;
+    text-align: center;
+}
+
+.menuSelect:hover {
+    border: 1px gray solid;
+    border-top-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    background-color: gray;
+}
+
+.pubEcont {
+    z-index: 1;
+    margin: auto;
+    width: 900px;
+    position: relative;
+    margin-top: 25px;
+    font-family: brushScriptStdMedium;
+    height: auto;
+}
+
+.conteudo {
+    z-index: 2;
+    margin: auto;
+    width: 542px;
+    position: relative;
+    height: auto;
+    margin-right: 25px;
+    margin-bottom: 20px;
+    float: left;
+    /*font-family: brushScriptStdMedium;*/
+    border-top-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    border: 4px solid lightgray;
+    background-color: lightgray;
+    font-size: 28px;
+    text-align: justify;
+    font-family: bookmanOldStyleRegular;
+    text-transform: none;
+
+}
+
+.justRegular {
+    text-align: justify;
+    font-family: bookmanOldStyleRegular;
+    text-transform: none;
+}
+
+.centerRegular {
+    text-align: center;
+    font-family: bookmanOldStyleRegular;
+    text-transform: none;
+}
+
+.post {
+    border: solid 1px #BDBDBD;
+    text-align: center;
+    font-weight: bold;
+}
+
+.jqte-test {
+    background: #FFF;
+    border: #AAA 1px solid;
+    font-size: 13px;
+}
+
+input[type=date]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    display: none;
+}
