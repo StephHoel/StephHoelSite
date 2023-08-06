@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/StephHoelSite/static/css/main.0950b987.css",
+    "main.js": "/StephHoelSite/static/js/main.1c9bb5f6.js",
+    "static/media/Bookman-Old-Style.TTF": "/StephHoelSite/static/media/Bookman-Old-Style.0df3e7fae61f4c732665.TTF",
+    "static/media/Brush-Script-Std.otf": "/StephHoelSite/static/media/Brush-Script-Std.61ac315acefa5ce7b810.otf",
+    "index.html": "/StephHoelSite/index.html",
+    "main.0950b987.css.map": "/StephHoelSite/static/css/main.0950b987.css.map",
+    "main.1c9bb5f6.js.map": "/StephHoelSite/static/js/main.1c9bb5f6.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.0950b987.css",
+    "static/js/main.1c9bb5f6.js"
+  ]
+}
