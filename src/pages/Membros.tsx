@@ -1,6 +1,6 @@
 export default function Membros() {
   return (
-    <div>
+    <div className="w-3/4 text-center mx-auto">
       <div>
         O Grupo Algiz é para youtubers crescerem juntos e cada vez mais
         melhorarem a produção de um modo geral.
