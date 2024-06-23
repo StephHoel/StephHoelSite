@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/StephHoelSite/static/css/main.d68c67f0.css",
-    "main.js": "/StephHoelSite/static/js/main.7769d3b7.js",
+    "main.css": "/StephHoelSite/static/css/main.9510ce53.css",
+    "main.js": "/StephHoelSite/static/js/main.393dba5b.js",
     "index.html": "/StephHoelSite/index.html",
-    "main.d68c67f0.css.map": "/StephHoelSite/static/css/main.d68c67f0.css.map",
-    "main.7769d3b7.js.map": "/StephHoelSite/static/js/main.7769d3b7.js.map"
+    "main.9510ce53.css.map": "/StephHoelSite/static/css/main.9510ce53.css.map",
+    "main.393dba5b.js.map": "/StephHoelSite/static/js/main.393dba5b.js.map"
   },
   "entrypoints": [
-    "static/css/main.d68c67f0.css",
-    "static/js/main.7769d3b7.js"
+    "static/css/main.9510ce53.css",
+    "static/js/main.393dba5b.js"
   ]
 }
