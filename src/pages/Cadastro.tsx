@@ -1,4 +1,4 @@
-export default function Cadastro() {
+export function Cadastro() {
   return (
     <article className="w-3/4 text-center mx-auto">
       {/*     

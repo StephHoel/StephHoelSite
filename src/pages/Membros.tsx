@@ -1,4 +1,4 @@
-export default function Membros() {
+export function Membros() {
   return (
     <div className="w-3/4 text-center mx-auto">
       <div>

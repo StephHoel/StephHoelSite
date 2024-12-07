@@ -1,4 +1,5 @@
-export default function Ficha() {
+
+export function Ficha() {
   return (
     <div className="w-3/4 text-center mx-auto">
       <form
@@ -33,7 +34,7 @@ export default function Ficha() {
           </div>
           <div className="justify-between w-full">
             <label htmlFor="descricao">Descrição do Canal:</label>
-            <textarea rows={5} cols={22} name="descricao"></textarea>
+            <textarea rows={5} cols={22} name="descricao" />
           </div>
           <div className="justify-between w-full">
             <label htmlFor="link_canal">Link do Canal:</label>
@@ -51,12 +52,12 @@ export default function Ficha() {
             <label htmlFor="link_twitter">Link do Perfil no Twitter:</label>
             <input type="text" name="link_twitter" />
           </div>
-          <div className="justify-between w-full">
-            <label htmlFor=""></label>
+          {/* <div className="justify-between w-full">
+            <label htmlFor="" />
           </div>
           <div className="justify-between w-full">
-            <label htmlFor=""></label>
-          </div>
+            <label htmlFor="" />
+          </div> */}
         </div>
 
         <div className="text-justify text-3xl">Perguntas essenciais:</div>

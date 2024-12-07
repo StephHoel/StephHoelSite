@@ -1,26 +1,16 @@
-import { ReactNode } from 'react'
-
 interface Props {
-  children: ReactNode
-  page?: string
-  onclick?: () => void
+  path: string
+  name: string
 }
 
-export default function ItemMenu({ children, page, onclick }: Props) {
-  function click() {
-    if (onclick) onclick()
-    else {
-      window.location.href =
-        window.location.href.split('=')[1] !== `${page}` ? `?page=${page}` : ''
-    }
-  }
-
+export function ItemMenu({ path, name }: Props) {
   return (
-    <div
-      onClick={click}
-      className="cursor-pointer bg-[#d3d3d3] rounded-br-3xl rounded-tl-3xl mr-6 p-3 text-4xl hover:bg-[#808080]"
-    >
-      {children}
-    </div>
+    <a href={path}>
+      <div
+        className="cursor-pointer bg-[#d3d3d3] rounded-br-3xl rounded-tl-3xl mr-6 p-3 text-4xl hover:bg-[#808080]"
+      >
+        {name}
+      </div>
+    </a >
   )
 }
