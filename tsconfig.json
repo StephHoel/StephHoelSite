@@ -18,7 +18,6 @@
     "isolatedModules": true,
     "jsx": "react-jsx",
     "incremental": false,
-    "ignoreDeprecations": "6.0"
   },
   "include": [
     "next-env.d.ts",
