@@ -1,6 +1,15 @@
 import type { PropsWithChildren } from "react"
 import { ItemMenu } from "../components/ItemMenu"
-import { routes } from "../lib/routes"
+
+const routes = [
+  { name: "Home", path: "/" },
+  { name: "Ficha", path: "/ficha" },
+  { name: "Cadastro", path: "/cadastro" },
+  { name: "Contato", path: "/contato" },
+  { name: "Login", path: "/login" },
+  { name: "Membros", path: "/membros" },
+  { name: "Sobre", path: "/sobre" },
+]
 
 export default function Layout({ children }: PropsWithChildren) {
   return (

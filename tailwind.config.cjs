@@ -4,7 +4,12 @@ module.exports = {
     './pages/**/*.{js,ts,jsx,tsx}',
   ],
   theme: {
-    extend: {},
+    extend: {
+      fontFamily: {
+        brush: ['Alex Brush', 'cursive'],
+        old: ['Old Standard TT', 'serif'],
+      },
+    },
   },
   plugins: [],
 }
