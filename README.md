@@ -23,12 +23,12 @@ StephHoelSite/
 ├── .gitignore             # Arquivos ignorados pelo Git
 ├── index.html             # Arquivo HTML principal
 ├── package.json           # Configurações do projeto e dependências
-├── postcss.config.js      # Configuração do PostCSS
-├── tailwind.config.js     # Configuração do TailwindCSS
+├── postcss.config.cjs     # Configuração do PostCSS (CommonJS)
+├── tailwind.config.cjs    # Configuração do TailwindCSS
 ├── tsconfig.json          # Configuração do TypeScript
 ├── tsconfig.app.json      # Configuração específica para o app
 ├── tsconfig.node.json     # Configuração específica para o Node.js
-└── vite.config.ts         # Configuração do Vite
+└── (Vite removed)         # Project migrated to Next.js
 ```
 
 ## 🚀 Como Executar o Projeto
