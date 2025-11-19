@@ -6,6 +6,8 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
+    "test:run": "jest --runInBand",
+    "test:e2e": "npm run build && start-server-and-test start http://127.0.0.1:3000 test:run",
     "lint": "next lint"
   },
   "homepage": "https://stephhoel.github.io/StephHoelSite",
@@ -21,6 +23,10 @@
     "@types/node": "^20.0.0",
     "@types/react": "^18.2.21",
     "@types/react-dom": "^18.2.6",
-    "typescript": "^5.9.3"
+    "typescript": "^5.9.3",
+    "jest": "^29.0.0",
+    "ts-jest": "^29.0.0",
+    "@types/jest": "^29.0.0",
+    "start-server-and-test": "^1.14.0"
   }
 }
