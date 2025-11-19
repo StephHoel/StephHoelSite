@@ -21,7 +21,7 @@ StephHoelSite/
 │   ├── pages/             # Páginas do site (Next.js)
 │   ├── index.css          # Estilos globais
 ├── .gitignore             # Arquivos ignorados pelo Git
-├── index.html             # Arquivo HTML principal
+├── (no index.html - Next.js uses `pages/`) 
 ├── package.json           # Configurações do projeto e dependências
 ├── postcss.config.cjs     # Configuração do PostCSS (CommonJS)
 ├── tailwind.config.cjs    # Configuração do TailwindCSS
@@ -74,7 +74,7 @@ Em seguida inicie com `npm start`.
 
 ### Publicação no GitHub Pages
 
-Publicação no GH Pages é feita atrás de uma pipeline CI configurada a cada push ou pull request.
+Publicação no GH Pages pode ser feita via pipeline CI ou export estático dependendo do fluxo desejado. Este repositório está preparado para rodar em Next.js (server or static export).
 
 ## 🌐 Estrutura de Rotas
 
@@ -90,7 +90,9 @@ As rotas do site agora são baseadas em arquivos dentro da pasta `pages/`. Aqui 
 
 ## 🖌️ Estilização
 
-O projeto utiliza TailwindCSS para estilização. As fontes personalizadas são configuradas no arquivo [`tailwind.config.js`](tailwind.config.js).
+O projeto utiliza TailwindCSS para estilização. As fontes personalizadas e mapeamento de classes estão configurados em `tailwind.config.cjs`. A configuração do PostCSS está em `postcss.config.cjs`.
+
+Observação: TypeScript incremental builds foram desativadas (`incremental: false`) para evitar a criação do arquivo `tsconfig.tsbuildinfo` no repositório.
 
 ---
 Desenvolvido por **Steph Hoel**.
