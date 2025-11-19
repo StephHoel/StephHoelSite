@@ -8,7 +8,7 @@
     "start": "next start",
     "test:run": "jest --runInBand",
     "test:e2e": "npm run build && start-server-and-test start http://127.0.0.1:3000 test:run",
-    "lint": "next lint"
+    "lint": "eslint . --ext .ts,.tsx --max-warnings=0 && echo \"ESLint: no errors found ✅\""
   },
   "homepage": "https://stephhoel.github.io/StephHoelSite",
   "dependencies": {
