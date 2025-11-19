@@ -11,8 +11,6 @@ export default function Document() {
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
         <link href="https://fonts.googleapis.com/css2?family=Alex+Brush&family=Old+Standard+TT&display=swap" rel="stylesheet" />
-
-        <title>Steph Hoel</title>
       </Head>
       <body>
         <Main />
