@@ -27,7 +27,8 @@ export default [
     settings: { react: { version: 'detect' } },
     rules: {
       // Basic rules; add more if you want stricter checks
-      'no-unused-vars': ['warn', { vars: 'all', args: 'after-used', ignoreRestSiblings: true }],
+      'no-unused-vars': 'off',
+      '@typescript-eslint/no-unused-vars': ['warn', { vars: 'all', args: 'after-used', ignoreRestSiblings: true }],
       'no-console': 'off',
       'react/react-in-jsx-scope': 'off'
     }

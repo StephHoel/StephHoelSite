@@ -8,7 +8,7 @@ export default function Login() {
       </Head>
 
       <div className="w-3/4 text-center mx-auto">
-        Página de Login a ser construida
+        Página de Login a ser construída
       </div>
     </>
   )

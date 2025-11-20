@@ -8,7 +8,7 @@ export default function Sobre() {
       </Head>
 
       <div className="w-3/4 text-center mx-auto">
-        Página de Informações a ser construida
+        Página de Informações a ser construída
       </div>
     </>
   )
