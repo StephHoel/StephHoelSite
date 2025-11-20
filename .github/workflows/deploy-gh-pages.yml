@@ -1,6 +1,9 @@
 name: Deploy Next.js site to GitHub Pages
 
 on:
+  push:
+    branches:
+      - develop 
   pull_request:
     branches:
       - main
@@ -15,8 +18,8 @@ concurrency:
   cancel-in-progress: false
 
 jobs:
-  build:
-    name: Build
+  e2e:
+    name: E2E
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
@@ -28,15 +31,60 @@ jobs:
           node-version: "20"
 
       - name: Install dependencies
-        run: npm install
+        run: npm i
+
+      - name: Run tests
+        run: npm run test
+
+  lint:
+    name: Lint
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+
+      - name: Install dependencies
+        run: npm i
+
+      - name: Run lint
+        run: npm run lint
+
+  build:
+    name: Build
+    runs-on: ubuntu-latest
+    needs: [e2e, lint]
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+
+      - name: Install dependencies
+        run: npm i
 
       - name: Configure Pages
         uses: actions/configure-pages@v5
 
       - name: Build (static export)
-        run: npm run build
+        run: NEXT_PUBLIC_BASE_PATH=/StephHoelSite npm run build
 
-      - name: Upload artifact
+      - name: Check ./out exists
+        run: |
+          if [ ! -d "out" ]; then
+            echo "out directory not found — static export may not have been produced."
+            exit 1
+          fi
+          echo "out exists"
+
+      - name: Upload pages artifact
         uses: actions/upload-pages-artifact@v3
         with:
           path: ./out

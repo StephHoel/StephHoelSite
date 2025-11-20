@@ -5,8 +5,8 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-    "start": "next start",
-    "test": "next build && start-server-and-test start http://127.0.0.1:3000 jest --runInBand",
+    "start": "npx serve@latest out",
+    "test": "next build && start-test :3000 'jest --runInBand'",
     "lint": "eslint . --ext .ts,.tsx --max-warnings=0 && echo \"ESLint: no errors found ✅\""
   },
   "homepage": "https://stephhoel.github.io/StephHoelSite",
