@@ -1,7 +1,6 @@
 import type { PropsWithChildren } from "react"
-import { ItemMenu } from "../components/ItemMenu"
-import '../index.css'
-import { routes } from "../lib/routes"
+import ItemMenu from '@/components/ItemMenu'
+import { routes } from '@/lib/routes'
 
 export default function Layout({ children }: PropsWithChildren) {
   return (
