@@ -8,7 +8,7 @@
     "start": "next start",
     "test": "npm run build && npm run test:no-build",
     "test:no-build": "start-test :3000 'jest --runInBand'",
-    "lint": "eslint lint"
+    "lint": "eslint . --ext .js,.jsx,.ts,.tsx"
   },
   "homepage": "https://stephhoel.github.io/StephHoelSite",
   "dependencies": {
