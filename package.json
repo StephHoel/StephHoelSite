@@ -6,6 +6,8 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
+    "test": "npm run build && npm run test:no-build",
+    "test:no-build": "start-test :3000 'jest --runInBand'",
     "lint": "eslint lint"
   },
   "homepage": "https://stephhoel.github.io/StephHoelSite",
