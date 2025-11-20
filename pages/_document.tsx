@@ -5,7 +5,7 @@ export default function Document() {
     <Html lang="pt-BR">
       <Head>
         <meta name="description" content="Portfolio online de Steph Hoel" />
-        <meta name="keywords" content="steph hoel porfolio online" />
+        <meta name="keywords" content="steph hoel portfolio online" />
         <meta name="author" content="Steph Hoel" />
 
         <link rel="preconnect" href="https://fonts.googleapis.com" />
